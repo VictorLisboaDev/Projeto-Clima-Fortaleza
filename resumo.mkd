@@ -1,0 +1,97 @@
+# 🌦️ Análise e Modelagem Preditiva do Clima de Fortaleza (2016-2026)
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Pandas](https://img.shields.io/badge/Pandas-2.0+-green.svg)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.2+-orange.svg)
+![XGBoost](https://img.shields.io/badge/XGBoost-1.7+-red.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)
+
+**Um projeto completo de Ciência de Dados aplicado à climatologia urbana**
+
+</div>
+
+---
+
+## 📋 Índice
+
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Contexto Climático](#contexto-climático)
+- [Base de Dados](#base-de-dados)
+- [Metodologia](#metodologia)
+- [Análise Exploratória](#-análise-exploratória)
+- [Modelagem Preditiva](#-modelagem-preditiva)
+- [Resultados](#-resultados)
+- [Previsões](#-previsões-para-os-próximos-dias)
+- [Tecnologias](#tecnologias-utilizadas)
+- [Estrutura](#estrutura-do-projeto)
+- [Como Executar](#-como-executar)
+- [Licença](#licença)
+
+---
+
+## 🎯 Sobre o Projeto
+
+Este projeto realiza uma **análise climatológica abrangente** da cidade de Fortaleza-CE, cobrindo o período de janeiro de 2016 a junho de 2026. Utilizando técnicas de **Ciência de Dados** e **Machine Learning**, o estudo investiga padrões climáticos, impacto de fenômenos como El Niño e La Niña, e desenvolve modelos preditivos para antecipar condições climáticas futuras.
+
+### Principais Contribuições
+
+- ✅ Geração de dataset sintético realista baseado em padrões climáticos reais
+- ✅ Análise estatística robusta com testes de hipótese e correlações
+- ✅ Identificação de tendências de aquecimento local
+- ✅ Modelos de Machine Learning com performance superior a 85% de acurácia
+- ✅ Sistema de previsão para os próximos 7-10 dias
+
+---
+
+## 🌍 Contexto Climático
+
+Fortaleza possui clima **tropical semiúmido** (Aw segundo Köppen), com as seguintes características:
+
+| Característica | Valor |
+|----------------|-------|
+| Temperatura média anual | 26-28°C |
+| Precipitação média anual | 1.400-1.600 mm |
+| Estação chuvosa | Fevereiro a Maio |
+| Estação seca | Julho a Novembro |
+| Umidade relativa média | 70-80% |
+
+### Fenômenos Climáticos Analisados
+
+| Ano | Fenômeno | Impacto Esperado |
+|-----|----------|------------------|
+| 2016 | El Niño Forte | Seca intensa + calor |
+| 2020-2021 | La Niña Forte | Chuvas acima da média |
+| 2023-2024 | El Niño Moderado/Forte | Período quente e seco |
+| 2026 | La Niña Fraca | Tendência de mais chuvas |
+
+---
+
+## 💾 Base de Dados
+
+### Dataset Sintético Gerado
+
+- **Período**: 01/01/2016 a 30/06/2026 (≈ 3.830 registros)
+- **Variáveis**: 10 variáveis climáticas + metadados temporais
+- **Realismo**: Baseado em parâmetros reais de Fortaleza
+
+### Variáveis do Dataset
+
+| Variável | Descrição | Unidade |
+|----------|-----------|---------|
+| `precipitacao_mm` | Precipitação diária | mm |
+| `temperatura_c` | Temperatura média diária | °C |
+| `umidade_percent` | Umidade relativa | % |
+| `vento_kmh` | Velocidade do vento | km/h |
+| `pressao_hpa` | Pressão atmosférica | hPa |
+| `fenomeno_climatico` | El Niño/La Niña/Neutro | Categórico |
+
+### Exemplo dos Dados
+
+```csv
+data,ano,mes,precipitacao_mm,temperatura_c,umidade_percent,fenomeno_climatico
+2016-01-01,2016,1,12.3,28.5,68,El Niño Forte
+2021-03-15,2021,3,45.7,26.2,85,La Niña Forte
+2024-07-20,2024,7,2.1,29.3,55,El Niño Forte
