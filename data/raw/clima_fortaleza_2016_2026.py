@@ -91,7 +91,7 @@ for data in datas:
     })
 
 df = pd.DataFrame(dados)
-df.to_csv('clima_fortaleza_2016_2026.csv', index=False)
+df.to_csv('data/raw/clima_fortaleza_2016_2026.csv', index=False)
 print(f"Dados gerados: {len(df)} registros de {df['data'].min()} a {df['data'].max()}")
 print(f"\nResumo por fenômeno:")
 print(df.groupby('fenomeno_climatico').agg({

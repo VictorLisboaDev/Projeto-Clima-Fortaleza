@@ -50,12 +50,12 @@ def criar_features_climaticas(df):
 # Exemplo de uso
 if __name__ == "__main__":
     # Carregar dados originais
-    df = pd.read_csv('clima_fortaleza_2016_2026.csv', parse_dates=['data'])
+    df = pd.read_csv('data/raw/clima_fortaleza_2016_2026.csv', parse_dates=['data'])
     
     # Criar features
     df_features = criar_features_climaticas(df)
     
     # Salvar dataset processado
-    df_features.to_csv('clima_features.csv', index=False)
+    df_features.to_csv('data/processed/clima_features.csv', index=False)
     print(f"Features criadas: {df_features.shape}")
     print(f"Colunas disponíveis: {df_features.columns.tolist()}")
