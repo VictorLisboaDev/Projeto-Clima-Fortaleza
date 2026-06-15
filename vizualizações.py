@@ -10,7 +10,7 @@ sns.set_palette("husl")
 
 # Carregar os dados
 print("Carregando dados...")
-df = pd.read_csv('data/raw/clima_fortaleza_2016_2026.csv', parse_dates=['data'])
+df = pd.read_csv('../data/raw/clima_fortaleza_2016_2026.csv', parse_dates=['data'])
 print(f"Dados carregados: {len(df)} registros")
 print(f"Período: {df['data'].min()} a {df['data'].max()}")
 
