@@ -50,7 +50,7 @@ def criar_features_climaticas(df):
 # Exemplo de uso
 if __name__ == "__main__":
     # Carregar dados originais
-    df = pd.read_csv('../data/raw/clima_fortaleza_2016_2026.csv', parse_dates=['data'])
+    df = pd.read_csv('data/raw/clima_fortaleza_2016_2026.csv', parse_dates=['data'])
     
     # Criar features
     df_features = criar_features_climaticas(df)
